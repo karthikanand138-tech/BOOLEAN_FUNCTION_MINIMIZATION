@@ -1,66 +1,48 @@
-# BOOLEAN_FUNCTION_MINIMIZATION
-
-**AIM:**
+AIM:
 
 To implement the given logic function verify its operation in Quartus using Verilog programming.
 
-F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D 
+F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D
 
 F2=xy’z+x’y’z+w’xy+wx’y+wxy
 
-**Equipment Required:**
+Equipment Required:
 
 Hardware – PCs, Cyclone II , USB flasher
 
-**Software – Quartus prime**
+Software – Quartus prime
 
-**Logic Diagram**
+Theory
 
-![lOGICDIAG](https://github.com/user-attachments/assets/53201c1c-ce82-47e5-9ee0-34506f2ebc1f)
+Logic Diagram
 
+Procedure
 
-**Procedure**
+Type the program in Quartus software.
 
-1.	Type the program in Quartus software.
+Compile and run the program.
 
-2.	Compile and run the program.
+Generate the RTL schematic and save the logic diagram.
 
-3.	Generate the RTL schematic and save the logic diagram.
+Create nodes for inputs and outputs to generate the timing diagram.
 
-4.	Create nodes for inputs and outputs to generate the timing diagram.
+For different input combinations generate the timing diagram.
 
-5.	For different input combinations generate the timing diagram.
+Program:
 
+/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
 
-**Program:**
-```
-Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+Developed by: RegisterNumber:*/
 
-Developed by: KABELAN G K
-RegisterNumber: 24900985
-```
-```
-module exp2(a,b,c,d,f1,w,x,y,z,f2);
-input a,b,c,d,w,x,y,z;
-output f1,f2;
-assign f1=((~b&~d)| (~a&b&d)| (a&b&~c));
-assign f2=((~y&z)|(x&y)|(w&y));
-endmodule 
-```
+RTL realization
 
+Output:
 
-**RTL realization**
+RTL
+<img width="1920" height="1080" alt="Screenshot (153)" src="https://github.com/user-attachments/assets/f86fa097-efbd-482b-8e2a-5aa9e0c97875" />\
+Timing Diagram
+<img width="1920" height="1080" alt="Screenshot (151)" src="https://github.com/user-attachments/assets/16cab7bd-6bad-401e-850f-c96b2f008ea2" />
 
-![image](https://github.com/user-attachments/assets/ea817c83-7e85-4640-8911-f60fdca9e002)
-
-
-**RTL**
-
-![image](https://github.com/user-attachments/assets/5c6f025f-7632-4952-98fe-b057294c40b1)
-
-
-
-**Result:**
+Result:
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
-
