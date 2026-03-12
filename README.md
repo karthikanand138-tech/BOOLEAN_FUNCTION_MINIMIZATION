@@ -38,6 +38,7 @@ Program to implement the given logic function and to verify its operations in qu
 
 Developed by: A. KARTHIK
 RegisterNumber: 212225220049
+~~~
 module exp2(
 input A,B,C,D,
 output F
@@ -48,7 +49,7 @@ assign F=(~A & ~B & ~C & ~D) |
 			(~A &  B &  C &  D) |
 			( B & ~C &  D);
 endmodule
-
+~~~
 
 **RTL realization**
 
