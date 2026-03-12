@@ -14,7 +14,10 @@ Software – Quartus prime
 
 Theory
 
-Logic Diagram
+Logic Diagram:
+
+<img width="730" height="896" alt="Screenshot 2026-03-12 161218" src="https://github.com/user-attachments/assets/2b46e2de-7589-4a4e-98cd-7bdc61049d40" />
+
 
 Procedure
 
@@ -30,17 +33,33 @@ For different input combinations generate the timing diagram.
 
 Program:
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
-
-Developed by: RegisterNumber:*/
-
+Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
+~~~
+Developed by: A. KARTHIK
+RegisterNumber: 212225220049
+~~~
+~~~
+module exp2(
+input A,B,C,D,
+output F
+);
+assign F=(~A & ~B & ~C & ~D) | 
+			( A & ~C & ~D)		  |
+			(~B &  C & ~D)      |
+			(~A &  B &  C &  D) |
+			( B & ~C &  D);
+endmodule
+~~~
 RTL realization
 
 Output:
 
 RTL
+
 <img width="1920" height="1080" alt="Screenshot (153)" src="https://github.com/user-attachments/assets/f86fa097-efbd-482b-8e2a-5aa9e0c97875" />\
+
 Timing Diagram
+
 <img width="1920" height="1080" alt="Screenshot (151)" src="https://github.com/user-attachments/assets/16cab7bd-6bad-401e-850f-c96b2f008ea2" />
 
 Result:
